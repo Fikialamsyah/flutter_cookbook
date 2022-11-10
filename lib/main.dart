@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_cookbook/design/custom_font.dart';
-import 'package:flutter_cookbook/design/update_ui_orientation.dart';
 import 'package:flutter_cookbook/design/use_themes.dart';
-import 'package:flutter_cookbook/design/work_with_tab.dart';
+import 'package:flutter_cookbook/gesture/handle_taps.dart';
+import 'package:flutter_cookbook/gesture/material_touch_ripples.dart';
+import 'package:flutter_cookbook/gesture/swipe_to_dismiss.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,8 +11,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: WorkWithTabPage(),
+    return MaterialApp(
+      home: SwipeDismissPage(),
     );
   }
 }
